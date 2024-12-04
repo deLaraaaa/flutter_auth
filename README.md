@@ -1,16 +1,43 @@
-# flutter_auth
+# Flutter Auth App
 
-A new Flutter project.
+Este é um aplicativo Flutter que utiliza autenticação com GitHub e Firebase.
 
-## Getting Started
+## Requisitos
 
-This project is a starting point for a Flutter application.
+- Flutter SDK: ^3.5.4
+- Dart SDK: ^3.5.4
+- Android SDK: minSdk 23
+- iOS SDK: minSdk 11.0
 
-A few resources to get you started if this is your first Flutter project:
+## Configuração do Projeto
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+1. **Clone o repositório:**
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+   ```sh
+   git clone https://github.com/seu-usuario/flutter_auth.git
+   cd flutter_auth
+
+2. **Instale as dependências**
+
+    ```sh
+    flutter pub get
+
+3. **Configuração do dotenv**
+
+    ```sh
+    FIREBASE_API_KEY=https://flutter-auth-9ea49.firebaseapp.com/__/auth/handler
+    GITHUB_CLIENT_ID=Ov23liKa1vx2dWVxNmRA
+    GITHUB_CLIENT_SECRET=9373e374745e8ce0d4833d1b27a944ff4d3003a1
+
+4. **Executando o Projeto**
+
+    ```sh
+    flutter run
+
+5. **Estrutura do Projeto**
+
+    `lib/main.dart`: Ponto de entrada do aplicativo.
+
+    `lib/screens/login_screen.dart`: Tela de login com autenticação GitHub.
+    
+    `lib/services/firebase_service.dart`: Serviço de autenticação com Firebase e GitHub.
