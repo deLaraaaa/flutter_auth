@@ -2,6 +2,11 @@
 
 Este é um aplicativo Flutter que utiliza autenticação com GitHub e Firebase.
 
+## Integrantes do Grupo
+
+- Matheus Sady
+- Rafael de Lara
+
 ## Requisitos
 
 - Flutter SDK: ^3.5.4
@@ -39,5 +44,17 @@ Este é um aplicativo Flutter que utiliza autenticação com GitHub e Firebase.
     `lib/main.dart`: Ponto de entrada do aplicativo.
 
     `lib/screens/login_screen.dart`: Tela de login com autenticação GitHub.
-    
+
     `lib/services/firebase_service.dart`: Serviço de autenticação com Firebase e GitHub.
+
+6. **Funções por Tela**
+
+    *Tela de Login (`lib/screens/login_screen.dart`):*
+
+    - Autenticação com GitHub.
+    - Redirecionamento para a tela inicial após login bem-sucedido.
+
+    *Tela Inicial (`lib/screens/home_screen.dart`):*
+
+    - Exibição das informações do usuário autenticado.
+    - Logout do usuário.
